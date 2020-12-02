@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout  
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:layout_width="fill_parent"  
+  android:layout_height="fill_parent"  
+  android:orientation="vertical"  
+  android:background="@drawable/ui_bg"
+  >  
+  <TextView 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:text="局域网络配置"
+  android:textSize="30sp"
+  android:gravity="center_horizontal"
+  android:layout_margin="30dip"
+  />
+  <TextView 
+  android:text = "无限路由器名称："
+  android:layout_width="fill_parent"   
+  android:layout_height="wrap_content"
+  android:textSize="20sp"
+  />  
+  <Spinner
+  android:id="@+id/wifi_id"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+   />
+<TextView 
+  android:text = "无限路由器密码："
+  android:layout_width="fill_parent"   
+  android:layout_height="wrap_content"
+  android:textSize="20sp"
+  />  
+  <EditText
+  android:id="@+id/wifi_password"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:hint="PSK密码"
+   />
+  <!-- 
+   <TextView 
+  android:text = "认证类型："
+  android:layout_width="fill_parent"   
+  android:layout_height="wrap_content"
+  android:textSize="20sp"
+  />  
+  <Spinner android:id="@+id/wifi_renzheng"   
+           android:layout_width="fill_parent"  
+           android:layout_height="wrap_content"></Spinner>
+  <TextView 
+  android:text = "加密算法："
+  android:layout_width="fill_parent"   
+  android:layout_height="wrap_content"
+  android:textSize="20sp"
+  />  
+  <Spinner android:id="@+id/wifi_suanfa"   
+           android:layout_width="fill_parent"  
+           android:layout_height="wrap_content"></Spinner>  
+            -->
+  <Button
+  android:layout_margin="20dip"
+  android:id="@+id/wifi_button"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:text="确认"/>
+</LinearLayout>

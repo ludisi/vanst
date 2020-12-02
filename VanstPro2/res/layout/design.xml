@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TextView 
+	android:text="自定义设备设置"
+	android:textSize="25sp"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="20dip"
+	android:textStyle="bold"
+	android:gravity="center"
+	/>
+	<LinearLayout 
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<TextView 
+	android:id="@+id/design_instructionCount"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="发送命令数量：0"
+	/>
+	 <Button
+    android:id = "@+id/design_addinstructions" 
+    android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="增加发送命令"
+    />
+     <Button
+    android:id = "@+id/design_deleteinstructions" 
+    android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="删除发送命令"
+    />
+	</LinearLayout>
+    <LinearLayout 
+	android:orientation="horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<TextView 
+	android:id="@+id/design_reInstructionCount"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_weight="1"
+	android:text="接受命令数量：0"
+	/>
+    <Button
+    android:id = "@+id/design_addreinstructions" 
+    android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_weight="1"
+	android:text="增加接受命令"
+    />
+    <Button
+    android:id = "@+id/design_detelereinstructions" 
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_weight="1"
+	android:text="删除接受命令"
+    />
+     </LinearLayout>
+     <TextView
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:text="图片文件名"
+     />
+     <EditText
+    android:id = "@+id/design_filepath" 
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+    />
+    <Button 
+    android:id = "@+id/design_open"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="打开"
+    />
+    <Button 
+    android:id = "@+id/design_enter"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="确认"
+    />
+   
+</LinearLayout>

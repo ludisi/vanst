@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.vanst.client"
+      android:versionCode="17"
+      android:versionName="2.3"
+      >
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>    
+ 	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>    
+ 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/> 
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />  
+	<uses-permission android:name="android.permission.CALL_PHONE"/>  
+	<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <application android:icon="@drawable/ic_launcher" android:label="Vanst生活">
+        <activity android:name=".StartActivity"
+                  android:label="Vanst生活"
+                  android:screenOrientation="portrait"
+                   android:theme="@style/Vanstchange">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                   android:theme="@style/Vanstchange">
+           <intent-filter>
+                <action android:name="android.intent.action.proMain" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		 <activity android:name=".DfbControlActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Translucent">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proDfbControl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+            <activity android:name=".KtControlActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Translucent">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proKtControl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+            <activity android:name=".Kt485ControlActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Translucent">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proKt485Control" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+            <activity android:name=".ClControlActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Translucent">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proClControl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+            <activity android:name=".TdControlActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Translucent">
+                <intent-filter>
+                <action android:name="android.intent.action.proTdControl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".FsControlActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Translucent">
+                <intent-filter>
+                <action android:name="android.intent.action.proFsControl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".ListenControlActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Translucent">
+                <intent-filter>
+                <action android:name="android.intent.action.proListenControl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".XyjControlActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Translucent">
+                <intent-filter>
+                <action android:name="android.intent.action.proXyjControl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".WifiSettingActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+                <intent-filter>
+                <action android:name="android.intent.action.proWifi" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".PasswordActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+                <intent-filter>
+                <action android:name="android.intent.action.proPassword" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".PhotoActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+                <intent-filter>
+                <action android:name="android.intent.action.proPhoto" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+            <activity android:name=".DeviceControlActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Translucent">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proDeviceControl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+            <activity android:name=".DesignActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proDesign" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".DiyControlActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Translucent">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proDiyControl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".DiyIRActivity"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proDiyIR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".WidgetActivity"
+                  android:label=""
+                  android:screenOrientation="unspecified"
+                  android:theme="@style/Transparent">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proWidgetActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".WidgetActivity1"
+                  android:label=""
+                  android:screenOrientation="unspecified"
+                  android:theme="@style/Transparent">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proWidgetActivity1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".WidgetActivity2"
+                  android:label=""
+                  android:screenOrientation="unspecified"
+                  android:theme="@style/Transparent">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proWidgetActivity2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".WidgetActivity3"
+                  android:label=""
+                  android:screenOrientation="unspecified"
+                  android:theme="@style/Transparent">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proWidgetActivity3" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".WidgetActivity4"
+                  android:label=""
+                  android:screenOrientation="unspecified"
+                  android:theme="@style/Transparent">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proWidgetActivity4" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".WidgetActivity5"
+                  android:label=""
+                  android:screenOrientation="unspecified"
+                  android:theme="@style/Transparent">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proWidgetActivity5" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".WidgetActivity6"
+                  android:label=""
+                  android:screenOrientation="unspecified"
+                  android:theme="@style/Transparent">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proWidgetActivity6" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <activity android:name=".WidgetActivity7"
+                  android:label=""
+                  android:screenOrientation="unspecified"
+                  android:theme="@style/Transparent">
+                
+                <intent-filter>
+                <action android:name="android.intent.action.proWidgetActivity7" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           </activity>
+           <service android:name=".VanstService">
+            <intent-filter >
+                <action android:name="android.intent.action.vanstservice"/>
+            </intent-filter>
+       	 </service>
+       	 <receiver android:name=".VanstWidgetProvider" >
+   			 <intent-filter>
+    			   <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+  			  </intent-filter>
+  			  <meta-data android:name="android.appwidget.provider"
+        			       android:resource="@xml/vanstwidget" />
+		</receiver>
+    </application>
+</manifest>

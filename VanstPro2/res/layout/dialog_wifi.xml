@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <TextView 
+  	android:layout_marginLeft="20dip"
+    android:id="@+id/dialog_wifi_textview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    ></TextView>
+    <CheckBox 
+    android:id="@+id/dialog_wifi_checkbox"
+    android:text="启动应用后自动搜索WIFI服务器"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />
+    
+</LinearLayout>

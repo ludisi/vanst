@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  >
+	<ImageButton 
+	android:id="@+id/td_image"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@android:color/transparent"
+	android:src="@drawable/light0"
+	/>
+	 <SeekBar 
+        android:id="@+id/td_seekbar"
+ 		android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+         android:max="9"
+         android:layout_marginRight="20dip" 
+         android:layout_gravity="center_vertical"
+         />
+</LinearLayout>

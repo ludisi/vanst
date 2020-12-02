@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Translucent" parent="android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+　　
+　　<item name="android:windowBackground">@color/transparent</item>
+　　
+　　<item name="android:windowIsTranslucent">true</item>
+　　
+　　<item name="android:windowAnimationStyle">@+android:style/Animation.Dialog</item>
+　　</style>
+	<style name="Transparent" parent="android:style/Theme.Translucent.NoTitleBar">
+　　
+　　<item name="android:windowBackground">@color/atransparent</item>
+　　
+　　<item name="android:windowIsTranslucent">true</item>
+　　
+　　<item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+　　
+　　</style>
+	<style name="Vanstchange" parent="android:style/Theme.Black.NoTitleBar.Fullscreen">
+　　<item name="android:windowAnimationStyle">@+android:style/Animation.Activity</item> 
+	<item name="android:activityOpenEnterAnimation">@anim/anim_enter</item>  
+<item name="android:activityOpenExitAnimation">@anim/anim_exit</item>  
+  
+<item name="android:activityCloseEnterAnimation">@anim/back_enter</item>  
+<item name="android:activityCloseExitAnimation">@anim/back_exit</item> 
+　　</style>
+	
+
+	<style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">  
+        <item name="android:button">@drawable/check</item>  
+        <item name="android:layout_margin">10dp</item>  
+        <item name="android:layout_weight">1</item>   
+	</style>
+
+</resources>
